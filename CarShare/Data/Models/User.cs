@@ -15,8 +15,8 @@ namespace CarShare.Data.Models
 
         public UserType UserType { get; set; }
 
-        public AdminProfile? AdminProfile { get; set; }
-        public OwnerProfile? OwnerProfile { get; set; }
-        public RenterProfile? RenterProfile { get; set; }
+        public Admin? AdminProfile { get; set; }
+        public Owner? OwnerProfile { get; set; }
+        public Renter? RenterProfile { get; set; }
     }
 }

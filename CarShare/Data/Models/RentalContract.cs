@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.Metrics;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CarShare.Data.Models
+{
+    internal class RentalContract
+    {
+        [Key]
+        public int RentalId { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
+        public string Status { get; set; }
+        public decimal TotalPrice { get; set; }
+
+        public int ProposalId { get; set; }
+        public Proposal Proposal { get; set; }
+
+   
+        public int RenterId { get; set; }
+        public Renter Renter { get; set; }
+    }
+}
