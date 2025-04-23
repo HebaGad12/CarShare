@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CarShare.Data.Models
 {
-    internal class Admin
+    public class Admin
     {
         [Key]
         public int Id { get; set; }

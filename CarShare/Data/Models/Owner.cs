@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarShare.Data.Models
 {
-    internal class Owner
+    public class Owner
     {
         public int Id { get; set; }
 

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CarShare.Data.Models
 {
-    internal class Proposal
+    public class Proposal
     {
         [Key]
         public int ProbId { get; set; }

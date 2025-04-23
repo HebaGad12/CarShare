@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CarShare.Data.Models
 {
-    internal class Renter
+    public class Renter
     {
         [Key]
         public int Id { get; set; }

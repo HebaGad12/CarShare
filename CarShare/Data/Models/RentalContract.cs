@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CarShare.Data.Models
 {
-    internal class RentalContract
+    public class RentalContract
     {
         [Key]
         public int RentalId { get; set; }
@@ -20,7 +20,7 @@ namespace CarShare.Data.Models
         public int ProposalId { get; set; }
         public Proposal Proposal { get; set; }
 
-   
+
         public int RenterId { get; set; }
         public Renter Renter { get; set; }
     }

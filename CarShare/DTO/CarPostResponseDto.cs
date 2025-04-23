@@ -1,16 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CarShare.Data.Models
+﻿namespace CarShare.DTO
 {
-    public class CarPost
+    public class CarPostResponseDto
     {
-        [Key]
-        public int CarId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public string CarType { get; set; }
@@ -21,10 +12,8 @@ namespace CarShare.Data.Models
         public string Location { get; set; }
         public DateTime AvailStart { get; set; }
         public DateTime AvailEnd { get; set; }
-
         public int OwnerId { get; set; }
-        public Owner Owner { get; set; }
-
-        public ICollection<Proposal> Proposals { get; set; }
+        public string OwnerName { get; set; }
+        public int ProposalCount { get; set; }
     }
 }
